@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+	table{
+		width:270px;
+		border-collapse:collapse;
+	}
+	td{
+		width:30px;
+		height:30px;
+	}
+	.black{
+		background-color:black;
+	}
+	.white{
+		background-color:white;
+	}
+</style>
+</head>
+<body>
+	<table border="1">
+<?php
+for($row=0;$row<8;$row++)
+{
+	echo"<tr>";
+	for($col=0;$col<8;$col++)
+	{
+		$class=($row+$col)%2==0?"white":"black";
+		echo"<td class='$class'></td>";
+	}
+	echo"<tr>";
+}
+?>
+</table>
+</body>
+</html>
