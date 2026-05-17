@@ -1,0 +1,11 @@
+<?php
+$a=array("apple","banana","orange","kiwi");
+echo("current:".current($a)."<br>");
+echo("key:".key($a)."<br>");
+echo("pos:".pos($a)."<br>");
+next($a);
+echo("current:".current($a)."<br>");
+echo("Reset:".reset($a)."<br>");
+echo("End:".end($a)."<br>");
+echo("Prev:".prev($a)."<br>");
+?>
